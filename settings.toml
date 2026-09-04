@@ -44,7 +44,7 @@ employer = "Oakland North"      # Where you work, intern, or freelance most
 #   "signal"     – huge bold headline, then a bright yellow band
 #   "harbor"     – deep teal with a portrait sidebar and serif type
 
-template = "harbor"
+template = "bloom"
 
 # ── How people reach you ────────────────────────────────────
 
