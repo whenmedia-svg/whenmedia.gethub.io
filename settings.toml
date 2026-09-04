@@ -203,8 +203,8 @@ category = "Multimedia"
 
 [colors]
 accent = ""            # e.g. "#c9401a"  (find codes at htmlcolorcodes.com)
-background = "#037210" #057029   # e.g. "#057029"
-text = "E4E4E4"         # e.g. "#E4E4E4"
+background = "#4C822B" #057029   # e.g. "#057029"
+text = "FFFFFF"         # e.g. "#E4E4E4"
 
 [fonts]
 # Any font from fonts.google.com — just write its name.
