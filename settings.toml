@@ -64,7 +64,7 @@ socials = [
 # Upload files to the "media" folder on GitHub, then write the
 # file's name here.
 
-banner_photo = "WuendyC.Photo.jpg"   # A portrait or banner photo of you
+banner_photo = ""   # A portrait or banner photo of you
 resume = "media/resume.pdf"         # A PDF of your resume (adds a Resume button)
 favicon = ""                        # Tiny browser-tab icon. Empty = made for you
 
@@ -202,9 +202,9 @@ category = "Multimedia"
 # ============================================================
 
 [colors]
-accent = ""       # e.g. "#c9401a"  (find codes at htmlcolorcodes.com)
-background = ""   # e.g. "#057029"
-text = ""         # e.g. "#E4E4E4"
+accent = ""            # e.g. "#c9401a"  (find codes at htmlcolorcodes.com)
+background = "057029" #057029   # e.g. "#057029"
+text = "E4E4E4"         # e.g. "#E4E4E4"
 
 [fonts]
 # Any font from fonts.google.com — just write its name.
