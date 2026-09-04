@@ -48,7 +48,7 @@ template = "bloom"
 
 # ── How people reach you ────────────────────────────────────
 
-email = "juan.perez@example.com"
+email = ""
 phone = ""                          # e.g. "(510) 555-0123" — or leave empty
 
 # Paste any social media links here, one per line between the brackets.
