@@ -1,0 +1,128 @@
+/* ==========================================================================
+   BYLINE — centered, letterspaced, quiet minimalism
+   ========================================================================== */
+
+body { font-weight: 300; font-size: 1.03rem; }
+
+/* --- Masthead ------------------------------------------------------------- */
+
+.masthead { padding: 6rem 0 3.5rem; text-align: center; }
+
+.masthead-name {
+  font-weight: 500;
+  font-size: clamp(1.9rem, 5.5vw, 3.6rem);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin: 0 0 0 0.28em; /* offset the trailing letter-space so it looks centered */
+  line-height: 1.25;
+}
+
+.masthead-tagline {
+  margin: 1.6rem 0 0 0.4em;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+}
+
+.masthead-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.1rem 2.2rem;
+  margin-top: 3.2rem;
+}
+
+.masthead-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+}
+
+.masthead-nav a:hover { border-bottom-color: var(--color-accent); }
+
+/* --- About ----------------------------------------------------------------- */
+
+.about-section { padding: 2.5rem 0 4rem; }
+
+.about-photo {
+  max-width: min(760px, 100%);
+  margin: 0 auto 3rem;
+}
+
+.about-body {
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 1.07rem;
+  font-weight: 400;
+}
+
+.about-body p { margin: 0 0 1.4rem; }
+
+/* --- Works ------------------------------------------------------------------ */
+
+.work-section { padding: 3.5rem 0 1.5rem; }
+
+.section-heading {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.15rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin: 0 0 3rem;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 2.6rem;
+  height: 1px;
+  background: var(--color-accent);
+  margin: 1.4rem auto 0;
+}
+
+.work-card { background: transparent; }
+
+.work-card-media { margin-bottom: 1.1rem; }
+
+.work-card-body { display: flex; flex-direction: column; gap: 0.4rem; text-align: center; align-items: center; }
+
+.work-kicker { letter-spacing: 0.18em; font-size: 0.72rem; }
+
+.work-title {
+  font-weight: 400;
+  font-size: 1.12rem;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.work-card-link:hover .work-title { text-decoration: underline; text-underline-offset: 6px; }
+
+.work-desc { margin: 0; font-size: 0.92rem; line-height: 1.7; color: #6d6d6d; font-weight: 400;}
+
+.work-card .media-badge { margin-top: 0.4rem; }
+
+/* --- Contact / footer -------------------------------------------------------- */
+
+.contact-section { padding: 4.5rem 0 1.5rem; text-align: center; }
+
+.contact-inner { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+
+.contact-line { margin: 0; letter-spacing: 0.06em; }
+
+.contact-line a { text-decoration: none; border-bottom: 1px solid #bbb; }
+
+.contact-socials { justify-content: center; margin-top: 1.4rem; }
+
+.contact-socials a { font-size: 0.85rem; background: transparent !important; color: var(--color-text) !important; border: 1px solid #ccc; }
+
+.contact-socials a:hover { border-color: var(--color-accent); }
+
+.site-footer { letter-spacing: 0.08em; }

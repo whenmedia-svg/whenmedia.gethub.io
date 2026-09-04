@@ -1,0 +1,209 @@
+# ============================================================
+#  ⭐  YOUR WEBSITE SETTINGS  ⭐
+#
+#  This is the only file you need to edit to build your site.
+#  Change the text between the quote marks, save (commit), and
+#  your website rebuilds itself automatically in a minute or two.
+#
+#  RULES OF THUMB
+#  • Keep the quote marks: name = "Your Name"
+#  • Lines starting with # are notes — the computer ignores them.
+#  • To skip an option, leave it empty ("") or put a # at the beginning of that line.
+#  • Full instructions live in the README file.
+# ============================================================
+
+
+# ── Who you are ─────────────────────────────────────────────
+
+name = "Juan Pérez"                # ← Required. Everything else is optional.
+
+# A short phrase describing you. Shows up big at the top of most templates.
+tagline = "Multimedia journalist telling the East Bay's stories"
+
+location = "Berkeley, California"
+
+# ── For search engines only (optional) ──────────────────────
+#
+# These two lines never show up anywhere on your website. They
+# are tucked invisibly into the page so Google, and the AI tools
+# that read the web, can tell who you are and where you work.
+# Fill them in if they apply to you. If not, leave them empty.
+
+job_title = "Multimedia Journalist"     # Your role, like "Reporter" or "Photojournalist"
+employer = "Richmond Confidential"      # Where you work, intern, or freelance most
+
+# ── The look of your site ───────────────────────────────────
+#
+# Pick one template (see the README for pictures of each):
+#   "marquee"    – bold black-and-white with a huge headline
+#   "editorial"  – elegant magazine-style serif type
+#   "byline"     – minimal and airy, centered text
+#   "ivory"      – soft ivory and navy, quiet and refined
+#   "bloom"      – warm pastel colors, friendly and rounded
+#   "newsprint"  – classic newspaper look on warm paper
+#   "signal"     – huge bold headline, then a bright yellow band
+#   "harbor"     – deep teal with a portrait sidebar and serif type
+
+template = "newsprint"
+
+# ── How people reach you ────────────────────────────────────
+
+email = "juan.perez@example.com"
+phone = ""                          # e.g. "(510) 555-0123" — or leave empty
+
+# Paste any social media links here, one per line between the brackets.
+# The right icon appears automatically.
+socials = [
+  "https://www.instagram.com/example",
+  "https://www.linkedin.com/in/example",
+  "https://bsky.app/profile/example.bsky.social",
+]
+
+# ── Photos and files ────────────────────────────────────────
+#
+# Upload files to the "media" folder on GitHub, then write the
+# file's name here.
+
+banner_photo = "media/banner.jpg"   # A portrait or banner photo of you
+resume = "media/resume.pdf"         # A PDF of your resume (adds a Resume button)
+favicon = ""                        # Tiny browser-tab icon. Empty = made for you
+
+# ── About you ───────────────────────────────────────────────
+#
+# Your bio. Keep the three quote marks (""") on their own lines.
+# A blank line starts a new paragraph.
+
+bio = """
+I'm a journalism student at UC Berkeley with a focus on multimedia
+storytelling. I grew up in Fresno, where the kitchen radio was
+always tuned to the news. I've been hooked ever since.
+
+My reporting covers housing, transportation and food access in the East
+Bay. I write for Richmond Confidential and spent last summer as a
+reporting intern with the SF Chronicle, where I learned that the best
+stories usually start at a bus stop, a taquería or a city council
+meeting that runs past midnight.
+
+When I'm not reporting, you'll find me photographing high school
+soccer, digging through city budget PDFs, or hunting down the Bay
+Area's best al pastor.
+"""
+
+# Optional extra line at the bottom of every page.
+footer = ""
+
+
+# ============================================================
+#  YOUR PORTFOLIO
+#
+#  Each piece of work starts with [[work]] on its own line.
+#  Copy a whole block to add a new one. Every line inside a
+#  block is optional — leave out what you don't have.
+#
+#  "category" groups similar work together on the page and in
+#  the menu. Give works the same category name to group them.
+#
+#  "outlet" is optional and never appears on your site. It tells
+#  search engines which publication ran the piece, which helps
+#  connect your name to your byline elsewhere on the web.
+# ============================================================
+
+# ── Published stories: give them a url and they link out ────
+
+[[work]]
+title = "City Council approves protected bike lanes for Telegraph Avenue"
+description = "After a decade of debate and three hours of public comment, Berkeley's City Council voted 7–2 to build protected bike lanes along one of the city's busiest corridors."
+url = "https://example.com/your-story-link-goes-here"
+image = "media/work/bike-lanes.jpg"
+date = "March 2026"
+category = "Journalism"
+outlet = "Berkeleyside"
+
+[[work]]
+title = "The wells are running dry: a Central Valley town confronts its future"
+description = "In Teviston, families have watched their taps sputter for years. Now a state grant promises relief — but the water table keeps falling faster than the money arrives."
+url = "https://example.com/your-story-link-goes-here"
+image = "media/work/drought.jpg"
+date = "January 2026"
+category = "Journalism"
+outlet = "The San Francisco Chronicle"
+
+[[work]]
+title = "As grocery prices climb, more Cal students turn to the campus food pantry"
+description = "Visits to the UC Berkeley Food Pantry have doubled in two years. Students, staff and volunteers describe the quiet logistics of keeping shelves stocked."
+url = "https://example.com/your-story-link-goes-here"
+image = "media/work/food-bank.jpg"
+date = "November 2025"
+category = "Journalism"
+outlet = "The Daily Californian"
+
+# This one has no image on purpose — the site still handles it gracefully.
+[[work]]
+title = "Opinion: Student journalism deserves a seat at the press table"
+description = "Student reporters cover city hall when no one else shows up. It's time public agencies treated them like the working press they are."
+url = "https://example.com/your-story-link-goes-here"
+date = "October 2025"
+category = "Journalism"
+outlet = "Richmond Confidential"
+
+# ── A photo essay stored right here on your site ────────────
+#
+# No url needed! List the photos and clicking the work opens a
+# slideshow. Write captions after the | symbol (optional).
+
+[[work]]
+title = "Saturday at the farmers market"
+description = "Scenes from a morning at the downtown farmers market, where vendors set up before sunrise and regulars arrive with the same canvas bags every week."
+date = "February 2026"
+category = "Photojournalism"
+photos = [
+  "media/farmers-market/01-market-opening.jpg | Produce stands catch the first light as the market opens at 8 a.m.",
+  "media/farmers-market/02-vendor.jpg | Vendors greet the day's first customers — many by name.",
+  "media/farmers-market/03-vegetables.jpg | Winter vegetables, picked the afternoon before, fill the tables by dawn.",
+  "media/farmers-market/04-flowers.jpg | Flower buckets wait for the mid-morning rush.",
+  "media/farmers-market/05-fruit.jpg | By noon, the best of the citrus is already gone.",
+]
+
+# ── An audio story stored on your site ──────────────────────
+#
+# Point "audio" at an mp3 file in your media folder. The photo
+# is optional. Clicking the work opens an audio player.
+
+[[work]]
+title = "One small step: the sound that stopped the world"
+description = "An audio postcard revisiting the most famous sentence ever spoken off-planet, and what it sounded like in living rooms in 1969."
+audio = "media/audio/one-small-step.mp3"
+image = "media/work/apollo.jpg"
+date = "December 2025"
+category = "Multimedia"
+
+# ── A video hosted on YouTube or Vimeo ──────────────────────
+#
+# Upload your video to YouTube or Vimeo, then paste its link
+# here. Clicking the work plays it in a pop-up.
+
+[[work]]
+title = "Video explainer: why we're going back to the Moon"
+description = "A short explainer on NASA's Artemis program, produced for my multimedia reporting class."
+video = "https://www.youtube.com/watch?v=vl6jn-DdafM"
+date = "September 2025"
+category = "Multimedia"
+
+
+# ============================================================
+#  OPTIONAL EXTRAS — colors and fonts
+#
+#  Every template already comes with matching colors and fonts,
+#  so you can ignore this section entirely. But if you want to
+#  make it your own, fill these in.
+# ============================================================
+
+[colors]
+accent = ""       # e.g. "#c9401a"  (find codes at htmlcolorcodes.com)
+background = ""   # e.g. "#fffdf5"
+text = ""         # e.g. "#222222"
+
+[fonts]
+# Any font from fonts.google.com — just write its name.
+heading = ""      # e.g. "Playfair Display"
+body = ""         # e.g. "Lora"

@@ -1,0 +1,205 @@
+/* ==========================================================================
+   HARBOR — deep teal, fixed portrait sidebar, serif headlines, white cards
+   ========================================================================== */
+
+body { font-size: 0.98rem; -webkit-font-smoothing: antialiased; }
+
+.layout { display: flex; min-height: 100vh; }
+
+/* --- Sidebar ------------------------------------------------------------------ */
+
+.sidebar {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: 320px;
+  padding: 2.6rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 1.15rem;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.sidebar-photo {
+  width: 150px;
+  height: 175px;
+  object-fit: cover;
+  border: 4px solid var(--color-text);
+}
+
+.sidebar .social-links {
+  justify-content: flex-end;
+  gap: 0.5rem;
+  --social-icon-bg: var(--color-text);
+  --social-icon-color: var(--color-bg);
+}
+
+.sidebar .social-links a { font-size: 0.82rem; }
+
+.sidebar-name {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 2.05rem;
+  line-height: 1.12;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Body copy in the sidebar stays in the sans face at regular weight */
+.sidebar-bio {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.88rem;
+  line-height: 1.72;
+}
+
+.sidebar-bio p { margin: 0 0 0.9rem; }
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.sidebar-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.92rem;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.sidebar-nav a:hover { border-bottom-color: var(--color-accent); color: var(--color-accent); }
+
+/* --- Main column ---------------------------------------------------------------- */
+
+.main { margin-left: 320px; width: calc(100% - 320px); }
+
+.masthead { padding: 3.2rem 0 3.5rem; }
+
+.masthead-title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(2.2rem, 4.6vw, 3.9rem);
+  line-height: 1.16;
+  margin: 0;
+  max-width: 17ch;
+}
+
+/* --- Works: white story cards ----------------------------------------------------- */
+
+.work-section { padding: 1.5rem 0 3rem; }
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+  text-align: center;
+  margin: 0 0 2.2rem;
+}
+
+.work-card { background: #fdfbf7; color: #1c1c1c; }
+
+.work-card-media { aspect-ratio: 3 / 2; }
+
+.work-card-body {
+  padding: 1.15rem 1.25rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.work-kicker {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: #5d5d5d;
+  opacity: 1;
+}
+
+/* Headlines stay in the serif, set in black */
+.work-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.24;
+  margin: 0;
+  color: #000000;
+}
+
+.work-card-link:hover .work-title { text-decoration: underline; text-underline-offset: 3px; }
+
+/* Card body copy in the sans face at regular weight */
+.work-desc {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 1.68;
+  color: #3b3b3b;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.work-card .media-badge {
+  margin-top: 0.35rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: #1c1c1c;
+  opacity: 0.75;
+}
+
+/* --- Contact / footer -------------------------------------------------------------- */
+
+.contact-section { padding: 3rem 0 1.5rem; text-align: center; }
+
+.contact-inner { display: flex; flex-direction: column; align-items: center; gap: 0.4rem; }
+
+.contact-line { margin: 0; font-size: 1rem; }
+
+.contact-line a { color: var(--color-accent); text-underline-offset: 3px; }
+
+.contact-socials {
+  justify-content: center;
+  margin-top: 1.1rem;
+  --social-icon-bg: var(--color-text);
+  --social-icon-color: var(--color-bg);
+}
+
+.site-footer { padding-top: 2rem; }
+
+/* --- Mobile ------------------------------------------------------------------------- */
+
+@media (max-width: 991px) {
+  .layout { display: block; }
+  .sidebar {
+    position: static;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 2.2rem 1.5rem 1.5rem;
+    overflow: visible;
+  }
+  .sidebar .social-links { justify-content: center; }
+  .sidebar-bio { max-width: 32rem; }
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem 1.4rem;
+    margin-top: 0.5rem;
+  }
+  .main { margin-left: 0; width: 100%; }
+  .masthead { padding: 1.5rem 0 2.5rem; text-align: center; }
+  .masthead-title { max-width: none; }
+}

@@ -1,0 +1,103 @@
+/* ==========================================================================
+   IVORY — soft ivory canvas, deep navy serif, statement hero
+   ========================================================================== */
+
+body { font-size: 1.12rem; }
+
+/* --- Top bar ---------------------------------------------------------------- */
+
+.topbar { padding: 1.6rem 0; }
+
+.topbar-inner { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem 1.5rem; }
+
+.topbar-name { font-family: var(--font-heading); font-size: 1.3rem; font-weight: 500; margin: 0; }
+
+.topbar-nav { display: flex; flex-wrap: wrap; gap: 1.4rem; }
+
+.topbar-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.92rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid transparent;
+}
+
+.topbar-nav a:hover { border-bottom-color: var(--color-accent); }
+
+/* --- Hero -------------------------------------------------------------------- */
+
+.hero { padding: 4rem 0 4.5rem; }
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 5.5vw, 4.6rem);
+  line-height: 1.12;
+  margin: 0;
+  letter-spacing: 0.005em;
+}
+
+.hero-photo { width: 100%; max-height: 78vh; object-fit: cover; }
+
+/* --- About ------------------------------------------------------------------- */
+
+.about-section { padding: 1.5rem 0 3.5rem; }
+
+.about-body { max-width: 46rem; line-height: 1.85; font-size: 1.18rem; }
+
+.about-body p { margin: 0 0 1.3rem; }
+
+.about-body a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+/* --- Works -------------------------------------------------------------------- */
+
+.work-section { padding: 3rem 0 1.5rem; }
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+  margin: 0 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(46, 56, 86, 0.35);
+}
+
+.work-card { padding-top: 0.2rem; }
+
+.work-card-media { margin-bottom: 1rem; }
+
+.work-card-body { display: flex; flex-direction: column; gap: 0.45rem; }
+
+.work-kicker { font-size: 0.78rem; letter-spacing: 0.14em; }
+
+.work-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1.65rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.work-card-link:hover .work-title { font-style: italic; }
+
+.work-desc { margin: 0; font-size: 1rem; line-height: 1.7; opacity: 0.85; }
+
+.media-badge { color: var(--color-accent); }
+
+/* --- Contact / footer ----------------------------------------------------------- */
+
+.contact-section { padding: 4rem 0 1rem; }
+
+.contact-inner { display: flex; flex-direction: column; gap: 0.5rem; }
+
+.contact-line { margin: 0; font-size: 1.15rem; }
+
+.contact-line a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+.contact-socials { margin-top: 1rem; --social-icon-bg: var(--color-accent); --social-icon-color: #eae7e0; }
+
+.site-footer { text-align: left; border-top: 1px solid rgba(46, 56, 86, 0.25); margin-top: 2.5rem; }
+
+.site-footer .container { padding-top: 1.5rem; }
+
+.site-footer p { text-align: left; }

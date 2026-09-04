@@ -1,0 +1,11 @@
+# Generated site output
+_site/
+
+# Dependencies
+node_modules/
+
+# Design inspiration folder (local only)
+inspo/
+
+# macOS noise
+.DS_Store

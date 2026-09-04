@@ -1,0 +1,18 @@
+{
+  "displayName": "Bloom",
+  "description": "Warm and friendly — soft pastel color bands, rounded type, and gentle cards with a personal touch.",
+  "fonts": {
+    "heading": "'Quicksand', 'Trebuchet MS', sans-serif",
+    "body": "'Lora', Georgia, serif"
+  },
+  "fontFallbacks": { "heading": "sans-serif", "body": "serif" },
+  "googleFonts": [
+    "Quicksand:wght@500;600;700",
+    "Lora:ital,wght@0,400;0,600;1,400"
+  ],
+  "colors": {
+    "accent": "#e05a74",
+    "background": "#ffffff",
+    "text": "#4a4145"
+  }
+}

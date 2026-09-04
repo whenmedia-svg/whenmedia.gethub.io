@@ -1,0 +1,17 @@
+{
+  "displayName": "Signal",
+  "description": "Loud and modern — an oversized bold headline on pale gray, then a saturated color band holding your intro and your work.",
+  "fonts": {
+    "heading": "'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+    "body": "'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+  },
+  "fontFallbacks": { "heading": "sans-serif", "body": "sans-serif" },
+  "googleFonts": [
+    "Inter:wght@400;500;600;700;800"
+  ],
+  "colors": {
+    "accent": "#ffc629",
+    "background": "#f2f2f0",
+    "text": "#0b0b0b"
+  }
+}

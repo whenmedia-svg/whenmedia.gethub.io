@@ -1,0 +1,102 @@
+{# ==========================================================================
+   Shared portfolio macros.
+
+   Every template imports this file and calls either cardSections() (a card
+   grid) or rowSections() (full-width alternating rows). Cards are clickable
+   when the work item has a link or local media; local media opens a modal.
+   ========================================================================== #}
+
+{% macro mediaBadge(work) %}
+  {%- if work.type == 'video' -%}
+    <span class="media-badge">{{ icon('play') }} Watch video</span>
+  {%- elif work.type == 'audio' -%}
+    <span class="media-badge">{{ icon('headphones') }} Listen</span>
+  {%- elif work.type == 'photo-essay' -%}
+    <span class="media-badge">{{ icon('camera') }} {{ work.photos | length }} photos</span>
+  {%- endif -%}
+{% endmacro %}
+
+{% macro cardBody(work) %}
+  <div class="work-card-body">
+    {% if work.date %}<p class="work-kicker">{{ work.date }}</p>{% endif %}
+    {% if work.title %}<h3 class="work-title">{{ work.title }}</h3>{% endif %}
+    {% if work.description %}<p class="work-desc">{{ work.description }}</p>{% endif %}
+    {{ mediaBadge(work) }}
+  </div>
+{% endmacro %}
+
+{% macro cardInner(work) %}
+  {% if work.image %}
+    <div class="work-card-media"><img src="{{ work.image }}" alt="{{ work.title or 'Portfolio work' }}" loading="lazy"></div>
+  {% endif %}
+  {{ cardBody(work) }}
+{% endmacro %}
+
+{% macro card(work) %}
+  <article class="work-card work-type-{{ work.type }}{% if not work.image %} no-image{% endif %}">
+    {% if work.type == 'link' %}
+      <a class="work-card-link" href="{{ work.url }}" target="_blank" rel="noopener">{{ cardInner(work) }}</a>
+    {% elif work.type == 'video' or work.type == 'audio' or work.type == 'photo-essay' %}
+      <button class="work-card-link" type="button" data-modal="modal-{{ work.id }}">{{ cardInner(work) }}</button>
+    {% else %}
+      <div class="work-card-link is-static">{{ cardInner(work) }}</div>
+    {% endif %}
+  </article>
+{% endmacro %}
+
+{# --- Card grid: one <section> per category ------------------------------- #}
+{% macro cardSections(categories, cols=3) %}
+  {% for cat in categories %}
+    <section id="{{ cat.slug }}" class="work-section">
+      <div class="container">
+        <h2 class="section-heading">{{ cat.name }}</h2>
+        <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-{{ cols }}">
+          {% for w in cat.works %}
+            <div class="col d-flex">{{ card(w) }}</div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  {% endfor %}
+{% endmacro %}
+
+{# --- Full-width alternating rows ----------------------------------------- #}
+
+{% macro rowInner(work, flip) %}
+  <div class="row g-0 align-items-stretch">
+    {% if work.image %}
+      <div class="col-md-5 {% if flip %}order-md-2{% endif %}">
+        <div class="work-row-media"><img src="{{ work.image }}" alt="{{ work.title or 'Portfolio work' }}" loading="lazy"></div>
+      </div>
+    {% endif %}
+    <div class="{% if work.image %}col-md-7{% else %}col-12{% endif %} d-flex">
+      <div class="work-row-body">
+        {% if work.date %}<p class="work-kicker">{{ work.date }}</p>{% endif %}
+        {% if work.title %}<h3 class="work-title">{{ work.title }}</h3>{% endif %}
+        {% if work.description %}<p class="work-desc">{{ work.description }}</p>{% endif %}
+        {{ mediaBadge(work) }}
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro rowSections(categories) %}
+  {% for cat in categories %}
+    <section id="{{ cat.slug }}" class="work-section">
+      <div class="container">
+        <h2 class="section-heading">{{ cat.name }}</h2>
+        {% for w in cat.works %}
+          <article class="work-row work-type-{{ w.type }}">
+            {% if w.type == 'link' %}
+              <a class="work-row-link" href="{{ w.url }}" target="_blank" rel="noopener">{{ rowInner(w, loop.index is odd) }}</a>
+            {% elif w.type == 'video' or w.type == 'audio' or w.type == 'photo-essay' %}
+              <button class="work-row-link work-card-link" type="button" data-modal="modal-{{ w.id }}">{{ rowInner(w, loop.index is odd) }}</button>
+            {% else %}
+              <div class="work-row-link is-static">{{ rowInner(w, loop.index is odd) }}</div>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+{% endmacro %}

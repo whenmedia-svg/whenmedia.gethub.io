@@ -1,0 +1,127 @@
+/* ==========================================================================
+   BLOOM — pastel bands, rounded type, gentle cards
+   The tint colors are mixed from the accent, so changing the accent color
+   re-tints the whole site.
+   ========================================================================== */
+
+:root {
+  --tint: color-mix(in srgb, var(--color-accent) 14%, white);
+  --tint-strong: color-mix(in srgb, var(--color-accent) 24%, white);
+}
+
+body { font-size: 1.02rem; }
+
+/* --- Top bar ---------------------------------------------------------------- */
+
+.topbar { background: var(--tint); padding: 1.1rem 0; }
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.5rem;
+}
+
+.topbar .social-links { --social-icon-bg: var(--color-accent); --social-icon-color: #fff; }
+
+.topbar .social-links a { font-size: 0.78rem; }
+
+.topbar-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.topbar-nav { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+
+.topbar-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.topbar-nav a:hover { color: var(--color-accent); }
+
+/* --- Hero tagline ------------------------------------------------------------ */
+
+.hero { padding: 4.2rem 0 1rem; text-align: center; }
+
+.hero-tagline {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(1.7rem, 4.5vw, 3rem);
+  line-height: 1.25;
+  color: var(--color-accent);
+  max-width: 24ch;
+  margin: 0 auto;
+}
+
+/* --- About ------------------------------------------------------------------- */
+
+.about-section { padding: 4rem 0 4.5rem; }
+
+.about-photo { width: 100%; border-radius: 18px; }
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  color: var(--color-accent);
+  margin: 0 0 1.4rem;
+}
+
+.about-section .section-heading { text-align: center; }
+
+.about-p { line-height: 1.9; margin: 0 0 1.1rem; }
+
+/* --- Works -------------------------------------------------------------------- */
+
+.works-band { background: var(--tint); padding: 4rem 0 2.5rem; }
+
+.work-section { padding-bottom: 2rem; }
+
+.work-section .section-heading { text-align: left; margin-bottom: 2rem; }
+
+.work-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px color-mix(in srgb, var(--color-accent) 14%, transparent);
+}
+
+.work-card-media { border-radius: 16px 16px 0 0; }
+
+.work-card-body { padding: 1.15rem 1.25rem 1.35rem; display: flex; flex-direction: column; gap: 0.4rem; }
+
+.work-kicker { color: var(--color-accent); opacity: 0.8; }
+
+.work-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.22rem;
+  margin: 0;
+}
+
+.work-card-link:hover .work-title { color: var(--color-accent); }
+
+.work-desc { margin: 0; font-size: 0.93rem; line-height: 1.65; }
+
+.media-badge { color: var(--color-accent); opacity: 1; }
+
+/* --- Contact / footer ------------------------------------------------------------ */
+
+.contact-section { padding: 4rem 0 1.5rem; text-align: center; }
+
+.contact-inner { display: flex; flex-direction: column; align-items: center; gap: 0.45rem; }
+
+.contact-line { margin: 0; font-size: 1.08rem; }
+
+.contact-line a { color: var(--color-accent); }
+
+.contact-socials { justify-content: center; margin-top: 1rem; --social-icon-bg: var(--color-accent); --social-icon-color: #fff; }
+
+.site-footer { background: var(--tint-strong); margin-top: 2rem; padding: 1.6rem 0 1.8rem; opacity: 1; }

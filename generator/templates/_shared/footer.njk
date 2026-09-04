@@ -1,0 +1,32 @@
+{% import "_shared/social.njk" as social %}
+
+{% macro contactSection(site) %}
+  {% if site.hasContact %}
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-heading">Contact</h2>
+        <div class="contact-inner">
+          {% if site.email %}
+            <p class="contact-line"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          {% endif %}
+          {% if site.phone %}
+            <p class="contact-line"><a href="tel:{{ site.phone | replace(' ', '') }}">{{ site.phone }}</a></p>
+          {% endif %}
+          {% if site.location %}
+            <p class="contact-line contact-location">{{ site.location }}</p>
+          {% endif %}
+          {{ social.socialLinks(site.socials, 'contact-socials') }}
+        </div>
+      </div>
+    </section>
+  {% endif %}
+{% endmacro %}
+
+{% macro siteFooter(site) %}
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ site.year }} {{ site.name }}</p>
+      {% if site.footer %}<p>{{ site.footer }}</p>{% endif %}
+    </div>
+  </footer>
+{% endmacro %}

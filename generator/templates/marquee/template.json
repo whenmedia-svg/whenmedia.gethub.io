@@ -1,0 +1,18 @@
+{
+  "displayName": "Marquee",
+  "description": "Bold and unapologetic — a white sidebar, an inky black stage, and huge rounded type that shouts your name.",
+  "fonts": {
+    "heading": "'Baloo 2', 'Arial Black', sans-serif",
+    "body": "'Poppins', 'Helvetica Neue', sans-serif"
+  },
+  "fontFallbacks": { "heading": "sans-serif", "body": "sans-serif" },
+  "googleFonts": [
+    "Baloo+2:wght@600;700;800",
+    "Poppins:ital,wght@0,300;0,400;0,600;1,300"
+  ],
+  "colors": {
+    "accent": "#ffd23f",
+    "background": "#0d0d0d",
+    "text": "#f5f5f2"
+  }
+}

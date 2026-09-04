@@ -1,0 +1,18 @@
+{
+  "displayName": "Harbor",
+  "description": "Deep teal and bookish — a fixed portrait sidebar, a large serif headline, and crisp white story cards.",
+  "fonts": {
+    "heading": "'Lora', Georgia, 'Times New Roman', serif",
+    "body": "'Montserrat', 'Helvetica Neue', Arial, sans-serif"
+  },
+  "fontFallbacks": { "heading": "serif", "body": "sans-serif" },
+  "googleFonts": [
+    "Lora:ital,wght@0,400;0,500;0,600;1,400",
+    "Montserrat:wght@400;500;600"
+  ],
+  "colors": {
+    "accent": "#7ec9c8",
+    "background": "#17444d",
+    "text": "#f3f0e9"
+  }
+}

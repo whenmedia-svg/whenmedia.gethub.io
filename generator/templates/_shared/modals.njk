@@ -1,0 +1,54 @@
+{# ==========================================================================
+   Modal pop-ups for local media: photo essays, audio pieces, and videos.
+   One hidden modal per work item; opened by site.js via data-modal buttons.
+   ========================================================================== #}
+
+{% macro allModals(site) %}
+  {% for work in site.works %}
+    {% if work.type == 'video' or work.type == 'audio' or work.type == 'photo-essay' %}
+      <div class="modal-overlay" id="modal-{{ work.id }}" role="dialog" aria-modal="true" {% if work.title %}aria-label="{{ work.title }}"{% endif %}>
+        <div class="modal-box">
+          <button class="modal-close" type="button" aria-label="Close">&times;</button>
+
+          {% if work.title %}<h3 class="modal-title">{{ work.title }}</h3>{% endif %}
+          {% if work.date or work.category %}
+            <p class="modal-meta">{{ work.category }}{% if work.date and work.category %} · {% endif %}{{ work.date }}</p>
+          {% endif %}
+
+          {% if work.type == 'video' %}
+            <div class="modal-video">
+              <iframe data-src="{{ work.videoEmbed }}" title="{{ work.title or 'Video' }}" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+          {% elif work.type == 'audio' %}
+            <div class="modal-audio">
+              {% if work.image %}
+                <div class="modal-audio-photo"><img src="{{ work.image }}" alt="{{ work.title or 'Audio piece' }}"></div>
+              {% endif %}
+              <audio controls preload="none" src="{{ work.audio }}"></audio>
+            </div>
+
+          {% elif work.type == 'photo-essay' %}
+            <div class="slideshow">
+              {% for photo in work.photos %}
+                <figure class="slide{% if loop.first %} is-active{% endif %}">
+                  <img src="{{ photo.src }}" alt="{{ photo.caption or work.title or 'Photo' }}" {% if not loop.first %}loading="lazy"{% endif %}>
+                  {% if photo.caption %}<figcaption class="slide-caption">{{ photo.caption }}</figcaption>{% endif %}
+                </figure>
+              {% endfor %}
+              {% if work.photos.length > 1 %}
+                <div class="slideshow-controls">
+                  <button type="button" data-slide="prev" aria-label="Previous photo">&#8592;</button>
+                  <span class="slide-counter">1 of {{ work.photos.length }}</span>
+                  <button type="button" data-slide="next" aria-label="Next photo">&#8594;</button>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if work.description %}<p class="modal-description">{{ work.description }}</p>{% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}

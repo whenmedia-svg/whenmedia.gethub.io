@@ -1,0 +1,43 @@
+{% extends "_shared/base.njk" %}
+{% import "_shared/social.njk" as social %}
+{% import "_shared/work.njk" as work %}
+{% import "_shared/footer.njk" as footer %}
+
+{% block page %}
+
+<header class="masthead">
+  <div class="container">
+    <h1 class="masthead-name">{{ site.name }}</h1>
+    {% if site.tagline %}<p class="masthead-tagline">{{ site.tagline }}</p>{% endif %}
+    {% if site.nav.length or site.resume %}
+      <nav class="masthead-nav" aria-label="Sections">
+        {% for item in site.nav %}<a href="{{ item.href }}">{{ item.label }}</a>{% endfor %}
+        {% if site.resume %}<a href="{{ site.resume }}" target="_blank" rel="noopener">Resume</a>{% endif %}
+      </nav>
+    {% endif %}
+  </div>
+</header>
+
+{% if site.banner or site.hasAbout %}
+  <section id="about" class="about-section">
+    <div class="container">
+      {% if site.banner %}
+        <img class="about-photo" src="{{ site.banner }}" alt="{{ site.name }}">
+      {% endif %}
+      {% if site.hasAbout %}
+        <div class="about-body">
+          {% for p in site.bio %}<p>{{ p }}</p>{% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% endif %}
+
+{% if site.hasWork %}
+  {{ work.cardSections(site.categories, cols=3) }}
+{% endif %}
+
+{{ footer.contactSection(site) }}
+{{ footer.siteFooter(site) }}
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% macro socialLinks(socials, extraClass='') %}
+  {% if socials.length %}
+    <ul class="social-links {{ extraClass }}">
+      {% for s in socials %}
+        <li><a href="{{ s.url }}" target="_blank" rel="noopener" title="{{ s.label }}" aria-label="{{ s.label }}">{{ icon(s.platform) }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

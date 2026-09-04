@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.name }}{% if site.tagline %} — {{ site.tagline }}{% endif %}</title>
+<meta name="description" content="{{ site.tagline or site.bio[0] or site.name }}">
+
+{# Social share preview (Open Graph + Twitter cards) #}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ site.name }}">
+<meta property="og:description" content="{{ site.tagline or site.bio[0] or site.name }}">
+{% if siteUrl %}<meta property="og:url" content="{{ siteUrl }}">{% endif %}
+{% if site.banner %}
+<meta property="og:image" content="{{ siteUrl }}{{ site.banner }}">
+<meta name="twitter:card" content="summary_large_image">
+{% else %}
+<meta name="twitter:card" content="summary">
+{% endif %}
+
+{# Structured data (schema.org). Invisible to visitors; it tells search engines
+   and AI answer engines who this person is and what they have published. #}
+{% if jsonld %}<script type="application/ld+json">
+{{ jsonld | safe }}
+</script>{% endif %}
+
+<link rel="icon" href="{{ faviconHref }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{% if fontsUrl %}<link rel="stylesheet" href="{{ fontsUrl }}">{% endif %}
+
+<link rel="stylesheet" href="assets/bootstrap-grid.min.css">
+<link rel="stylesheet" href="assets/shared.css">
+<link rel="stylesheet" href="assets/template.css">
+
+<style>
+  :root {
+    --color-accent: {{ colors.accent | safe }};
+    --color-bg: {{ colors.background | safe }};
+    --color-text: {{ colors.text | safe }};
+    --font-heading: {{ fonts.heading | safe }};
+    --font-body: {{ fonts.body | safe }};
+  }
+</style>

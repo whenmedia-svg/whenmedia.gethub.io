@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include "_shared/head.njk" %}
+</head>
+<body class="template-{{ site.template }}">
+  {% block page %}{% endblock %}
+
+  {% import "_shared/modals.njk" as modals %}
+  {{ modals.allModals(site) }}
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

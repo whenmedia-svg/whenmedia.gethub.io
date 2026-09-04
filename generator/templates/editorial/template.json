@@ -1,0 +1,18 @@
+{
+  "displayName": "Editorial",
+  "description": "Magazine glamour — an enormous fashion-serif headline, generous white space, and full-width story rows.",
+  "fonts": {
+    "heading": "'Abril Fatface', 'Playfair Display', Georgia, serif",
+    "body": "'Lora', Georgia, serif"
+  },
+  "fontFallbacks": { "heading": "serif", "body": "serif" },
+  "googleFonts": [
+    "Abril+Fatface",
+    "Lora:ital,wght@0,400;0,600;1,400"
+  ],
+  "colors": {
+    "accent": "#111111",
+    "background": "#ffffff",
+    "text": "#1c1c1c"
+  }
+}

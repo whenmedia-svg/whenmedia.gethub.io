@@ -1,0 +1,19 @@
+{
+  "name": "personal-portfolio-site",
+  "version": "1.0.0",
+  "description": "A personal portfolio website generated from settings.toml",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node generator/build.js",
+    "dev": "node generator/dev.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.4",
+    "sharp": "^0.33.5",
+    "smol-toml": "^1.3.0"
+  }
+}

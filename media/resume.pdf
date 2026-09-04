@@ -1,0 +1,49 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 881 >>
+stream
+BT /F2 22 Tf 72 720 Td (Juan Pérez) Tj ET
+BT /F1 11 Tf 72 683 Td (Journalism Student  |  UC Berkeley  |  juan.perez@example.com) Tj ET
+BT /F1 11 Tf 72 665 Td () Tj ET
+BT /F2 13 Tf 72 647 Td (Education) Tj ET
+BT /F1 11 Tf 72 625 Td (B.A. Media Studies, University of California, Berkeley - Expected May 2027) Tj ET
+BT /F1 11 Tf 72 607 Td () Tj ET
+BT /F2 13 Tf 72 589 Td (Experience) Tj ET
+BT /F1 11 Tf 72 567 Td (Staff Writer, The Daily Californian - 2025 to present) Tj ET
+BT /F1 11 Tf 72 549 Td (Reporting Intern, Oakland North - Summer 2025) Tj ET
+BT /F1 11 Tf 72 531 Td () Tj ET
+BT /F2 13 Tf 72 513 Td (Skills) Tj ET
+BT /F1 11 Tf 72 491 Td (Reporting, photography, audio production, AP style, Spanish \(fluent\)) Tj ET
+BT /F1 11 Tf 72 473 Td () Tj ET
+BT /F1 9 Tf 72 455 Td (This is a placeholder resume from the portfolio template. Replace media/resume.pdf with your own.) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000348 00000 n 
+0000000450 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1382
+%%EOF

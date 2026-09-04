@@ -1,0 +1,70 @@
+{% extends "_shared/base.njk" %}
+{% import "_shared/social.njk" as social %}
+{% import "_shared/work.njk" as work %}
+{% import "_shared/footer.njk" as footer %}
+
+{% block page %}
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <p class="topbar-name">{{ site.name }}</p>
+    <nav class="topbar-nav" aria-label="Sections">
+      {% for item in site.nav %}<a href="{{ item.href }}">{{ item.label }}</a>{% endfor %}
+      {% if site.resume %}<a href="{{ site.resume }}" target="_blank" rel="noopener">Resume</a>{% endif %}
+      {{ social.socialLinks(site.socials) }}
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="hero-title">
+      {% for line in (site.tagline or site.name) | sentences %}
+        <span class="hero-line">{{ line }}</span>
+      {% endfor %}
+    </h1>
+  </div>
+</section>
+
+{# Everything below sits on the color band #}
+{% if site.hasAbout or site.banner or site.hasWork %}
+<div class="band">
+
+  {% if site.hasAbout or site.banner %}
+    <section id="about" class="intro-section">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-start">
+          {% if site.banner %}
+            <div class="col-lg-5">
+              <img class="intro-photo" src="{{ site.banner }}" alt="{{ site.name }}">
+            </div>
+          {% endif %}
+          <div class="{% if site.banner %}col-lg-7{% else %}col-lg-8 offset-lg-4{% endif %}">
+            <div class="intro-body">
+              <div class="intro-text">
+                {% if site.hasAbout %}
+                  {% for p in site.bio %}<p>{{ p }}</p>{% endfor %}
+                {% elif site.tagline %}
+                  <p>{{ site.tagline }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
+
+  {% if site.hasWork %}
+    <div class="works-wrap">
+      {{ work.cardSections(site.categories, cols=3) }}
+    </div>
+  {% endif %}
+
+</div>
+{% endif %}
+
+{{ footer.contactSection(site) }}
+{{ footer.siteFooter(site) }}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{
+  "displayName": "Newsprint",
+  "description": "Classic broadsheet — warm paper tones, a centered serif masthead with fine rules, and a tidy grid of story cards.",
+  "fonts": {
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Source Serif 4', Georgia, serif"
+  },
+  "fontFallbacks": { "heading": "serif", "body": "serif" },
+  "googleFonts": [
+    "Playfair+Display:ital,wght@0,500;0,600;0,700;1,500",
+    "Source+Serif+4:ital,wght@0,400;0,600;1,400"
+  ],
+  "colors": {
+    "accent": "#8f2d1e",
+    "background": "#faf3e7",
+    "text": "#2e2a24"
+  }
+}

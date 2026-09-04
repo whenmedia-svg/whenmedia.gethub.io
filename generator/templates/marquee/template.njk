@@ -1,0 +1,54 @@
+{% extends "_shared/base.njk" %}
+{% import "_shared/social.njk" as social %}
+{% import "_shared/work.njk" as work %}
+{% import "_shared/footer.njk" as footer %}
+
+{% block page %}
+<div class="layout">
+
+  <aside class="sidebar">
+    {{ social.socialLinks(site.socials) }}
+    <p class="sidebar-name">{{ site.name }}</p>
+    {% if site.nav.length %}
+      <nav class="sidebar-nav" aria-label="Sections">
+        {% for item in site.nav %}<a href="{{ item.href }}">{{ item.label | lower }}</a>{% endfor %}
+      </nav>
+    {% endif %}
+    {% if site.resume %}<a class="resume-link" href="{{ site.resume }}" target="_blank" rel="noopener">{{ icon('document') }} resume</a>{% endif %}
+  </aside>
+
+  <main class="main">
+
+    <header class="masthead">
+      <div class="container-fluid masthead-inner">
+        <h1 class="masthead-title">{{ site.tagline or site.name }}</h1>
+        {% if site.location %}<p class="masthead-location">{{ site.location }}</p>{% endif %}
+      </div>
+      {% if site.banner %}
+        <div class="masthead-photo"><img src="{{ site.banner }}" alt="{{ site.name }}"></div>
+      {% endif %}
+    </header>
+
+    {% if site.hasAbout %}
+      <section id="about" class="about-section">
+        <div class="container-fluid">
+          <h2 class="section-heading">about</h2>
+          <div class="about-body">
+            {% for p in site.bio %}<p>{{ p }}</p>{% endfor %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if site.hasWork %}
+      <div class="works-wrap">
+        {{ work.cardSections(site.categories, cols=2) }}
+      </div>
+    {% endif %}
+
+    {{ footer.contactSection(site) }}
+    {{ footer.siteFooter(site) }}
+  </main>
+
+</div>
+{% endblock %}

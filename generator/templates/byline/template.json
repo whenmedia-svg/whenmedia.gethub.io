@@ -1,0 +1,18 @@
+{
+  "displayName": "Byline",
+  "description": "Quiet confidence — a centered, letterspaced name, airy white space, and understated geometric type.",
+  "fonts": {
+    "heading": "'Jost', 'Futura', 'Century Gothic', sans-serif",
+    "body": "'Montserrat', 'Futura', 'Century Gothic', sans-serif"
+  },
+  "fontFallbacks": { "heading": "sans-serif", "body": "sans-serif" },
+  "googleFonts": [
+    "Jost:ital,wght@0,300;0,400;0,500;1,300",
+    "Montserrat:ital,wght@0,400;0,600"
+  ],
+  "colors": {
+    "accent": "#1a1a1a",
+    "background": "#ffffff",
+    "text": "#2b2b2b"
+  }
+}
