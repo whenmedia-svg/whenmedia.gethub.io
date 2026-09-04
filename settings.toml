@@ -15,12 +15,12 @@
 
 # ── Who you are ─────────────────────────────────────────────
 
-name = "Juan Pérez"                # ← Required. Everything else is optional.
+name = "Wuendy Calmo"                # ← Required. Everything else is optional.
 
 # A short phrase describing you. Shows up big at the top of most templates.
-tagline = "Multimedia journalist telling the East Bay's stories"
+tagline = "Maya Digital Weaver bridging stories, mediums, and communities."
 
-location = "Berkeley, California"
+location = "East Oakland, California"
 
 # ── For search engines only (optional) ──────────────────────
 #
@@ -30,7 +30,7 @@ location = "Berkeley, California"
 # Fill them in if they apply to you. If not, leave them empty.
 
 job_title = "Multimedia Journalist"     # Your role, like "Reporter" or "Photojournalist"
-employer = "Richmond Confidential"      # Where you work, intern, or freelance most
+employer = "Oakland North"      # Where you work, intern, or freelance most
 
 # ── The look of your site ───────────────────────────────────
 #
@@ -44,7 +44,7 @@ employer = "Richmond Confidential"      # Where you work, intern, or freelance m
 #   "signal"     – huge bold headline, then a bright yellow band
 #   "harbor"     – deep teal with a portrait sidebar and serif type
 
-template = "newsprint"
+template = "harbor"
 
 # ── How people reach you ────────────────────────────────────
 
@@ -64,7 +64,7 @@ socials = [
 # Upload files to the "media" folder on GitHub, then write the
 # file's name here.
 
-banner_photo = "media/banner.jpg"   # A portrait or banner photo of you
+banner_photo = "WuendyC.Photo.jpg"   # A portrait or banner photo of you
 resume = "media/resume.pdf"         # A PDF of your resume (adds a Resume button)
 favicon = ""                        # Tiny browser-tab icon. Empty = made for you
 
@@ -75,18 +75,21 @@ favicon = ""                        # Tiny browser-tab icon. Empty = made for yo
 
 bio = """
 I'm a journalism student at UC Berkeley with a focus on multimedia
-storytelling. I grew up in Fresno, where the kitchen radio was
-always tuned to the news. I've been hooked ever since.
+storytelling. I’m also a Bay Area–based Maya Mam storyteller and creative 
+dedicated to building more equitable, community-centered media. My work is rooted 
+in the belief that stories shape how we see ourselves—and too 
+often, the stories of Indigenous and marginalized communities 
+are overlooked, simplified, or told without us.
 
-My reporting covers housing, transportation and food access in the East
-Bay. I write for Richmond Confidential and spent last summer as a
-reporting intern with the SF Chronicle, where I learned that the best
-stories usually start at a bus stop, a taquería or a city council
-meeting that runs past midnight.
+As a filmmaker,media producer and journalist, my goal is to create stories and projects 
+that honor culture, lived experience, and community truth. I’m passionate 
+about using media as a tool for representation, connection, and 
+visibility—especially for communities like my own, who navigate 
+the world through heritage, migration, resilience, and 
+multilingual identity.
 
-When I'm not reporting, you'll find me photographing high school
-soccer, digging through city budget PDFs, or hunting down the Bay
-Area's best al pastor.
+When I'm not reporting, you'll find me hiking in a forest or spending time
+exploring the Bay Area with my friends and family. 
 """
 
 # Optional extra line at the bottom of every page.
@@ -200,8 +203,8 @@ category = "Multimedia"
 
 [colors]
 accent = ""       # e.g. "#c9401a"  (find codes at htmlcolorcodes.com)
-background = ""   # e.g. "#fffdf5"
-text = ""         # e.g. "#222222"
+background = ""   # e.g. "#057029"
+text = ""         # e.g. "#E4E4E4"
 
 [fonts]
 # Any font from fonts.google.com — just write its name.
