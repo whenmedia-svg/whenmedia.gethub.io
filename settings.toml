@@ -123,12 +123,14 @@ category = "Journalism"
 outlet = "Berkeleyside"
 
 [[work]]
-title = "The wells are running dry: a Central Valley town confronts its future"
-description = "In Teviston, families have watched their taps sputter for years. Now a state grant promises relief — but the water table keeps falling faster than the money arrives."
-url = "https://example.com/your-story-link-goes-here"
-image = "media/work/drought.jpg"
-date = "January 2026"
-category = "Journalism"
+title = "Silence the Violence"
+description = "A 2012 “Silence the Violence” event in Oakland, a community gathering held in response to seven youths under 18 being killed in just seven days.
+The film includes an interview with then‑Mayor Jean Quan, alongside young people sharing their experiences and proposed solutions, as the community came together 
+to discuss ways to respond to the crisis."
+url = "https://vimeo.com/52501693?turnstile=1.B3jYB99K9YQfUcDmE5eQ6jEf1F6nxbRfHZqQLOSMf80ZvV9FluLSEDiqDawJNEGv6X0Liz1bYd6TV9mwo1_TvTZsD6vM9h4R2LIWMSUCn5iBW1EIT87Yqj4VxTJD2s_eq1u222eO3i7QnoO-_04pzMk9tdgZKWIvSdYnRWlG21bEyECzfR2IDLwm1ULiL70IzPHRlVRVLcPyOFMGGjNwZH5Q2VfMm6p4aO_TV_3Mg6TN0-SxliNkUMzjXwC9TgAm6M80aNw2QT5JmOCxDqnPxEmS5OF3DMDMYheDDAzFTx3xdFAWkF-qjNRlbQTaPzOmNla0hsTHMqAOAJDaUGcCr0AdPbpMW8-06jBzYvm6xunJ3M_G98ShMgUy_FPuHnx7vW7zLoK4wBaen9okEk456enzZdNUkXQNkR36MR22HmIU2BF8suf8TSg3WKN3Qtr8_fSYMtRDQDFEBY2oJmicFmxjja24EKWs0pPLcO8yFv8oJ2DJtB6XMqsCxUd0UirhSGVvD59aoC7hi1rmajQUAVVi4mbNUeb_13lRZdYh4kzQXAqakGVKTiuJCnywQfc4KkdDtoyuDNoUwt0Zbm5Btr1pGLvIaUJTQQH1SV83H_7Ly7bn5aiFFBmf-hOB2RaN-yHcsDXf-6qb_KqtaOrnREZTugekieeSDH7f9C7ycCI.PHz-l75gYAJufyodA2dk3w.40d8c66428d2c1d9b537c042458e40dba33c21c602c8e0fe76bf85d8998aa1b0"
+image = "Silence.the.Violence.png"
+date = "October 2012"
+category = "Multimedia"
 outlet = "The San Francisco Chronicle"
 
 [[work]]
