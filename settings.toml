@@ -144,7 +144,7 @@ outlet = ""
 title = ""
 description = "Student reporters cover city hall when no one else shows up. It's time public agencies treated them like the working press they are."
 url = "https://example.com/your-story-link-goes-here"
-date = "October 2025"
+date = ""
 category = "Journalism"
 outlet = ""
 
@@ -156,7 +156,7 @@ outlet = ""
 [[work]]
 title = ""
 description = "Scenes from a morning at the downtown farmers market, where vendors set up before sunrise and regulars arrive with the same canvas bags every week."
-date = "February 2026"
+date = ""
 category = "Photojournalism"
 photos = [
   "",
@@ -188,7 +188,7 @@ category = "Multimedia"
 title = "Video explainer: why we're going back to the Moon"
 description = "A short explainer on NASA's Artemis program, produced for my multimedia reporting class."
 video = "https://www.youtube.com/watch?v=vl6jn-DdafM"
-date = "September 2025"
+date = ""
 category = "Multimedia"
 
 
