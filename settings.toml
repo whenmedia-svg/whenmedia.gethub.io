@@ -115,7 +115,7 @@ footer = ""
 
 [[work]]
 title = ""
-description = "."
+description = ""
 url = "https://example.com/your-story-link-goes-here"
 image = ""
 date = ""
@@ -187,7 +187,7 @@ category = "Multimedia"
 [[work]]
 title = ""
 description = ""
-video = "https://www.youtube.com/watch?v=vl6jn-DdafM"
+video = ""
 date = ""
 category = "Multimedia"
 
