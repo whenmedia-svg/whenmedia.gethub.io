@@ -148,6 +148,24 @@ date = ""
 category = "Journalism"
 outlet = ""
 
+
+[[work]]
+title = "Photojournalism Assignment"
+description = "Photo assignment from UC Berkeley Journalism School."
+date = "September 2026"
+category = "Photojournalism"
+photos = [
+  "media/photo-assignment/repeating-pattern.jpg | Repeating Pattern",
+  "media/photo-assignment/perspective.jpg | Perspective",
+  "media/photo-assignment/rule-of-thirds.jpg | Rule of Thirds",
+  "media/photo-assignment/symmetry.jpg | Symmetry",
+  "media/photo-assignment/framing.jpg | Framing",   
+  "media/photo-assignment/foreground-background.jpg | Foreground-background",
+  "media/photo-assignment/portrait.jpg | Portrait",
+  "media/photo-assignment/moment.jpg | Moment",
+]
+
+
 # ── A photo essay stored right here on your site ────────────
 #
 # No url needed! List the photos and clicking the work opens a
