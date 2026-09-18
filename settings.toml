@@ -142,7 +142,7 @@ outlet = ""
 # This one has no image on purpose — the site still handles it gracefully.
 [[work]]
 title = ""
-description = "Student reporters cover city hall when no one else shows up. It's time public agencies treated them like the working press they are."
+description = ""
 url = "https://example.com/your-story-link-goes-here"
 date = ""
 category = "Journalism"
@@ -155,7 +155,7 @@ outlet = ""
 
 [[work]]
 title = ""
-description = "Scenes from a morning at the downtown farmers market, where vendors set up before sunrise and regulars arrive with the same canvas bags every week."
+description = ""
 date = ""
 category = "Photojournalism"
 photos = [
@@ -173,7 +173,7 @@ photos = [
 
 [[work]]
 title = ""
-description = "An audio postcard revisiting the most famous sentence ever spoken off-planet, and what it sounded like in living rooms in 1969."
+description = ""
 audio = ""
 image = ""
 date = ""
@@ -185,8 +185,8 @@ category = "Multimedia"
 # here. Clicking the work plays it in a pop-up.
 
 [[work]]
-title = "Video explainer: why we're going back to the Moon"
-description = "A short explainer on NASA's Artemis program, produced for my multimedia reporting class."
+title = ""
+description = ""
 video = "https://www.youtube.com/watch?v=vl6jn-DdafM"
 date = ""
 category = "Multimedia"
