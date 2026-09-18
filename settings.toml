@@ -123,20 +123,17 @@ category = "Journalism"
 outlet = ""
 
 [[work]]
-title = "Silence the Violence"
-description = "A 2012 “Silence the Violence” event in Oakland, a community gathering held in response to seven youths under 18 being killed in just seven days.
-The film includes an interview with then‑Mayor Jean Quan, alongside young people sharing their experiences and proposed solutions, as the community came together 
-to discuss ways to respond to the crisis."
+title = ""
+description = ""
 url = ""
 image = ""
-date = "October 2012"
+date = ""
 category = "Journalism"
 outlet = ""
 
 [[work]]
 title = ""
-description = "Visits to the UC Berkeley Food Pantry have doubled in two years. Students, staff and volunteers describe the quiet logistics of keeping shelves stocked."
-url = "https://example.com/your-story-link-goes-here"
+description = ""
 image = ""
 date = ""
 category = "Journalism"
@@ -163,10 +160,10 @@ date = "February 2026"
 category = "Photojournalism"
 photos = [
   "",
-  "m",
-  "m",
-  "m",
-  "m",
+  "",
+  "",
+  "",
+  "",
 ]
 
 # ── An audio story stored on your site ──────────────────────
@@ -177,9 +174,9 @@ photos = [
 [[work]]
 title = ""
 description = "An audio postcard revisiting the most famous sentence ever spoken off-planet, and what it sounded like in living rooms in 1969."
-audio = "media/audio/one-small-step.mp3"
+audio = ""
 image = ""
-date = "December 2025"
+date = ""
 category = "Multimedia"
 
 # ── A video hosted on YouTube or Vimeo ──────────────────────
