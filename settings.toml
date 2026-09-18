@@ -219,7 +219,7 @@ category = "Multimedia"
 # ============================================================
 
 [colors]
-accent = "#757549" #65a30d           # e.g. "#c9401a"  (find codes at htmlcolorcodes.com)
+accent = "#65a30d " #65a30d           # e.g. "#c9401a"  (find codes at htmlcolorcodes.com)
 background = "#1a2e05" #057029   # e.g. "#057029"
 text = "#ABABAB"         # e.g. "#E4E4E4"
 
