@@ -114,13 +114,13 @@ footer = ""
 # ── Published stories: give them a url and they link out ────
 
 [[work]]
-title = "City Council approves protected bike lanes for Telegraph Avenue"
-description = "After a decade of debate and three hours of public comment, Berkeley's City Council voted 7–2 to build protected bike lanes along one of the city's busiest corridors."
+title = ""
+description = "."
 url = "https://example.com/your-story-link-goes-here"
-image = "media/work/bike-lanes.jpg"
-date = "March 2026"
+image = ""
+date = ""
 category = "Journalism"
-outlet = "Berkeleyside"
+outlet = ""
 
 [[work]]
 title = "Silence the Violence"
@@ -134,22 +134,22 @@ category = "Journalism"
 outlet = ""
 
 [[work]]
-title = "As grocery prices climb, more Cal students turn to the campus food pantry"
+title = ""
 description = "Visits to the UC Berkeley Food Pantry have doubled in two years. Students, staff and volunteers describe the quiet logistics of keeping shelves stocked."
 url = "https://example.com/your-story-link-goes-here"
-image = "media/work/food-bank.jpg"
-date = "November 2025"
+image = ""
+date = ""
 category = "Journalism"
-outlet = "The Daily Californian"
+outlet = ""
 
 # This one has no image on purpose — the site still handles it gracefully.
 [[work]]
-title = "Opinion: Student journalism deserves a seat at the press table"
+title = ""
 description = "Student reporters cover city hall when no one else shows up. It's time public agencies treated them like the working press they are."
 url = "https://example.com/your-story-link-goes-here"
 date = "October 2025"
 category = "Journalism"
-outlet = "Richmond Confidential"
+outlet = ""
 
 # ── A photo essay stored right here on your site ────────────
 #
@@ -157,16 +157,16 @@ outlet = "Richmond Confidential"
 # slideshow. Write captions after the | symbol (optional).
 
 [[work]]
-title = "Saturday at the farmers market"
+title = ""
 description = "Scenes from a morning at the downtown farmers market, where vendors set up before sunrise and regulars arrive with the same canvas bags every week."
 date = "February 2026"
 category = "Photojournalism"
 photos = [
-  "media/farmers-market/01-market-opening.jpg | Produce stands catch the first light as the market opens at 8 a.m.",
-  "media/farmers-market/02-vendor.jpg | Vendors greet the day's first customers — many by name.",
-  "media/farmers-market/03-vegetables.jpg | Winter vegetables, picked the afternoon before, fill the tables by dawn.",
-  "media/farmers-market/04-flowers.jpg | Flower buckets wait for the mid-morning rush.",
-  "media/farmers-market/05-fruit.jpg | By noon, the best of the citrus is already gone.",
+  "",
+  "m",
+  "m",
+  "m",
+  "m",
 ]
 
 # ── An audio story stored on your site ──────────────────────
@@ -175,10 +175,10 @@ photos = [
 # is optional. Clicking the work opens an audio player.
 
 [[work]]
-title = "One small step: the sound that stopped the world"
+title = ""
 description = "An audio postcard revisiting the most famous sentence ever spoken off-planet, and what it sounded like in living rooms in 1969."
 audio = "media/audio/one-small-step.mp3"
-image = "media/work/apollo.jpg"
+image = ""
 date = "December 2025"
 category = "Multimedia"
 
